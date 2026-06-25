@@ -1,16 +1,22 @@
 import logoImage from '../assets/logos/won-logis-logo-transparent.webp';
 import type { CSSProperties, ReactNode } from 'react';
 import {
+  aboutSectionContent,
   aboutMetrics,
+  brandContent,
+  commonLabels,
   contactDetails,
   ctaLink,
   featureHighlights,
   navigationItems,
   partnerNames,
+  partnersSectionContent,
   sections,
   serviceCards,
+  servicesSectionContent,
   siteMeta,
   socialLinks,
+  heroSectionContent,
 } from '../content/siteContent';
 
 type HeaderProps = {
@@ -57,17 +63,17 @@ function BrandMark({ footer = false }: { footer?: boolean }) {
     <a
       className={`inline-flex items-center ${footer ? 'justify-start' : 'justify-center'}`}
       href="#company"
-      aria-label="WON LOGIS 홈으로 이동"
+      aria-label={brandContent.homeAriaLabel}
     >
       <span className={`inline-flex items-center ${footer ? 'w-[182px]' : 'w-[154px]'}`}>
-        <img src={logoImage} alt="WON LOGIS" className="h-auto w-full object-contain" />
+        <img src={logoImage} alt={brandContent.logoAlt} className="h-auto w-full object-contain" />
       </span>
     </a>
   );
 }
 
 function HeroBrand() {
-  return <img src={logoImage} alt="WON LOGIS" className="h-auto w-[315px] object-contain sm:w-[410px] lg:w-[470px]" />;
+  return <img src={logoImage} alt={brandContent.logoAlt} className="h-auto w-[315px] object-contain sm:w-[410px] lg:w-[470px]" />;
 }
 
 export function Header({ activeSection, menuOpen, onMenuToggle, onNavigate }: HeaderProps) {
@@ -103,7 +109,7 @@ export function Header({ activeSection, menuOpen, onMenuToggle, onNavigate }: He
         <button
           type="button"
           aria-expanded={menuOpen}
-          aria-label="모바일 메뉴 토글"
+          aria-label={commonLabels.mobileMenuAriaLabel}
           className="grid h-11 w-11 place-items-center rounded-sm border border-white/15 text-white/80 transition hover:border-white/35 hover:text-white xl:hidden"
           onClick={onMenuToggle}
         >
@@ -159,7 +165,7 @@ export function HeroSection() {
       <div className="relative mx-auto max-w-[1920px]">
         <img
           src={sections.heroImage}
-          alt="원로지스 트럭이 글로벌 네트워크 배경 앞을 달리는 모습"
+          alt={heroSectionContent.imageAlt}
           className="h-[640px] w-full object-cover object-center md:h-[735px] xl:h-[785px]"
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,_rgba(6,21,45,0.93)_0%,_rgba(6,21,45,0.82)_28%,_rgba(6,21,45,0.42)_52%,_rgba(6,21,45,0.08)_100%)]" />
@@ -168,18 +174,19 @@ export function HeroSection() {
             <div className="space-y-8">
               <HeroBrand />
               <div className="space-y-5">
-                <h1 className="text-[2.45rem] font-semibold leading-[1.16] tracking-[-0.03em] text-white sm:text-[3rem] lg:text-[3.55rem]">
-                  신뢰로 연결하고, 가치로 운송합니다
-                </h1>
+                <h1 className="sr-only">{heroSectionContent.srTitle}</h1>
+                <h2 className="text-[2.45rem] font-semibold leading-[1.16] tracking-[-0.03em] text-white sm:text-[3rem] lg:text-[3.55rem]">
+                  {heroSectionContent.title}
+                </h2>
                 <p className="max-w-[430px] text-[1rem] leading-8 text-slate-200 sm:text-[1.05rem]">
-                  원로지스는 고객의 소중한 화물을 인정하고 신속하게 전 세계로 연결하는 종합 물류 파트너입니다.
+                  {heroSectionContent.description}
                 </p>
               </div>
               <a
                 href={ctaLink.href}
                 className="inline-flex items-center border border-gold/60 bg-[rgba(8,24,47,0.55)] px-7 py-[1.05rem] text-sm font-semibold text-[#f4d38e] transition hover:-translate-y-1 hover:bg-[rgba(8,24,47,0.76)]"
               >
-                견적 문의하기
+                {ctaLink.heroLabel}
                 <span className="ml-3">→</span>
               </a>
             </div>
@@ -220,9 +227,9 @@ export function ServicesSection() {
       <div className="mx-auto max-w-container">
         <Reveal className="flex justify-center mb-12">
           <SectionIntro
-            eyebrow="Our Services"
-            title="원로지스의 서비스"
-            description="다양한 운송 솔루션으로 고객의 비즈니스를 성공으로 이끕니다."
+            eyebrow={servicesSectionContent.eyebrow}
+            title={servicesSectionContent.title}
+            description={servicesSectionContent.description}
           />
         </Reveal>
 
@@ -248,7 +255,7 @@ export function ServicesSection() {
                     href={service.href}
                     className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-ink transition hover:gap-3 hover:text-gold"
                   >
-                    자세히 보기
+                    {commonLabels.serviceDetailLabel}
                     <span aria-hidden="true">→</span>
                   </a>
                 </div>
@@ -272,7 +279,7 @@ export function AboutSection() {
           <div className="relative overflow-hidden rounded-[14px] border border-white/10 bg-white/5">
             <img
               src={sections.aboutImage}
-              alt="원로지스 사옥 간판"
+              alt={aboutSectionContent.imageAlt}
               className="h-full min-h-[360px] w-full object-cover lg:min-h-[385px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-transparent" />
@@ -282,9 +289,9 @@ export function AboutSection() {
         <Reveal delay={120}>
           <div className="flex h-full flex-col justify-center">
             <SectionIntro
-              eyebrow="About Won Logis"
-              title="신뢰받는 종합 물류 파트너, 원로지스"
-              description="원로지스는 풍부한 경험과 전문성을 바탕으로 고객의 비즈니스 성장에 함께하는 최고의 물류 파트너가 되겠습니다."
+              eyebrow={aboutSectionContent.eyebrow}
+              title={aboutSectionContent.title}
+              description={aboutSectionContent.description}
               align="left"
               inverse
             />
@@ -314,13 +321,17 @@ export function PartnersSection() {
     <section id="partners" className="overflow-hidden bg-white px-4 py-[74px] sm:px-6 lg:px-8">
       <div className="mx-auto max-w-container">
         <Reveal className="flex justify-center mb-10">
-          <SectionIntro eyebrow="Partners" title="함께하는 글로벌 파트너" description="" />
+          <SectionIntro
+            eyebrow={partnersSectionContent.eyebrow}
+            title={partnersSectionContent.title}
+            description={partnersSectionContent.description}
+          />
         </Reveal>
 
         <div className="relative flex items-center justify-between gap-4 bg-white px-1 py-2 sm:px-2">
           <button
             type="button"
-            aria-label="이전 파트너"
+            aria-label={partnersSectionContent.previousAriaLabel}
             className="grid h-10 w-10 flex-none place-items-center rounded-full border border-slate-200 text-[1.35rem] text-slate-300"
           >
             ‹
@@ -334,7 +345,7 @@ export function PartnersSection() {
           </div>
           <button
             type="button"
-            aria-label="다음 파트너"
+            aria-label={partnersSectionContent.nextAriaLabel}
             className="grid h-10 w-10 flex-none place-items-center rounded-full border border-slate-200 text-[1.35rem] text-slate-300"
           >
             ›
@@ -370,7 +381,7 @@ export function Footer() {
           href="#company"
           className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-white/15 bg-white/5 text-sm font-semibold text-white transition hover:-translate-y-1 hover:border-gold/40 hover:text-[#f4d38e] lg:justify-self-end"
         >
-          TOP
+          {commonLabels.backToTopLabel}
         </a>
       </div>
     </footer>

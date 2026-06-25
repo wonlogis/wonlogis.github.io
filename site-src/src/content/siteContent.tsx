@@ -36,6 +36,12 @@ type ServiceCard = {
   icon: string;
 };
 
+export const brandContent = {
+  name: "원로지",
+  logoAlt: "원로지 로고",
+  homeAriaLabel: "원로지 홈으로 이동"
+};
+
 export const siteMeta = {
   kicker: "Global Integrated Logistics Partner",
   copyright: "© 2026 WON LOGIS. All Rights Reserved."
@@ -52,6 +58,7 @@ export const navigationItems: NavItem[] = [
 
 export const ctaLink = {
   label: "견적 문의",
+  heroLabel: "견적 문의하기",
   href: "#contact"
 };
 
@@ -63,6 +70,40 @@ export const sections = {
   ],
   heroImage,
   aboutImage
+};
+
+export const commonLabels = {
+  mobileMenuAriaLabel: "모바일 메뉴 토글",
+  serviceDetailLabel: "자세히 보기",
+  backToTopLabel: "TOP"
+};
+
+export const heroSectionContent = {
+  srTitle: "원로지",
+  title: "신뢰로 연결하고, 가치로 운송합니다",
+  description: "원로지는 고객의 소중한 화물을 신속하고 안전하게 연결하는 종합 물류 파트너입니다.",
+  imageAlt: "원로지 트럭이 글로벌 네트워크 배경 앞을 달리는 모습"
+};
+
+export const servicesSectionContent = {
+  eyebrow: "Our Services",
+  title: "원로지의 서비스",
+  description: "다양한 운송 솔루션으로 고객의 비즈니스를 성공으로 이끕니다."
+};
+
+export const aboutSectionContent = {
+  eyebrow: "About Won Logis",
+  title: "신뢰받는 종합 물류 파트너, 원로지",
+  description: "원로지는 풍부한 경험과 전문성을 바탕으로 고객의 비즈니스 성장에 함께하는 최고의 물류 파트너가 되겠습니다.",
+  imageAlt: "원로지 사옥 간판"
+};
+
+export const partnersSectionContent = {
+  eyebrow: "Partners",
+  title: "함께하는 글로벌 파트너",
+  description: "",
+  previousAriaLabel: "이전 파트너",
+  nextAriaLabel: "다음 파트너"
 };
 
 export const featureHighlights: FeatureItem[] = [
