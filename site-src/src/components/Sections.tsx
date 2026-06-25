@@ -97,6 +97,8 @@ export function Header({ activeSection, menuOpen, onMenuToggle, onNavigate }: He
         <div className="hidden items-center gap-4 xl:flex">
           <a
             href={ctaLink.href}
+            target={ctaLink.target}
+            rel={ctaLink.rel}
             className="group relative overflow-hidden border border-gold/60 px-7 py-[0.9rem] text-sm font-semibold text-[#f4d38e] transition-transform hover:-translate-y-0.5"
           >
             <span className="pointer-events-none absolute inset-y-0 left-0 w-12 bg-white/20 opacity-0 blur-md transition-opacity group-hover:opacity-100 group-hover:animate-shine" />
@@ -146,6 +148,8 @@ export function Header({ activeSection, menuOpen, onMenuToggle, onNavigate }: He
         </nav>
         <a
           href={ctaLink.href}
+          target={ctaLink.target}
+          rel={ctaLink.rel}
           className="mt-5 inline-flex justify-center rounded-full border border-gold/60 px-5 py-3 text-sm font-semibold text-[#f4d38e]"
           onClick={onNavigate}
         >
@@ -184,6 +188,8 @@ export function HeroSection() {
               </div>
               <a
                 href={ctaLink.href}
+                target={ctaLink.target}
+                rel={ctaLink.rel}
                 className="inline-flex items-center border border-gold/60 bg-[rgba(8,24,47,0.55)] px-7 py-[1.05rem] text-sm font-semibold text-[#f4d38e] transition hover:-translate-y-1 hover:bg-[rgba(8,24,47,0.76)]"
               >
                 {ctaLink.heroLabel}

@@ -59,7 +59,9 @@ export const navigationItems: NavItem[] = [
 export const ctaLink = {
   label: "견적 문의",
   heroLabel: "견적 문의하기",
-  href: "#contact"
+  href: "https://forms.gle/2ibje48YvKwy68xa9",
+  target: "_blank",
+  rel: "noreferrer"
 };
 
 export const sections = {
