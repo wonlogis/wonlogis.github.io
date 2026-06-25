@@ -195,9 +195,9 @@ export const aboutMetrics = [
 export const partnerNames = ["MAERSK", "MSC", "CMA CGM", "HMM", "ONE", "DP WORLD"];
 
 export const contactDetails = [
-  "(우) 10000 인천광역시 연수구 아트센터대로 123, 456호 (송도동)",
-  "TEL. 032-123-4567  |  FAX. 032-123-4568",
-  "E-MAIL. info@wonlogis.com"
+  "인천광역시 중구 신흥동3가 37",
+  "TEL. 010-3214-4139",
+  "E-MAIL. wonlogis1@gmail.com"
 ];
 
 export const socialLinks = [
