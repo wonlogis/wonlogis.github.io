@@ -82,7 +82,7 @@ export const navigationItems: NavItem[] = [
 export const ctaLink = {
   label: '견적 문의',
   heroLabel: '견적 문의하기',
-  href: 'https://forms.gle/2ibje48YvKwy68xa9',
+  href: 'https://naver.me/xaTmofhO',
   target: '_blank',
   rel: 'noreferrer',
 };
@@ -377,7 +377,7 @@ export const contactDetails = [
   '대표이사: 이주호',
   '주소: 인천광역시 중구 신흥동3가 37',
   '전화번호: 010-3214-4139',
-  '이메일: wonlogis1@gmail.com',
+  '이메일: wngh4139@naver.com',
 ];
 
 export const socialLinks: FooterLink[] = [];
