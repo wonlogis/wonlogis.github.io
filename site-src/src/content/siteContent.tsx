@@ -195,9 +195,9 @@ export const aboutMetrics = [
 export const partnerNames = ["MAERSK", "MSC", "CMA CGM", "HMM", "ONE", "DP WORLD"];
 
 export const contactDetails = [
-  "인천광역시 중구 신흥동3가 37",
-  "전화번호. 010-3214-4139",
-  "이메일. wonlogis1@gmail.com"
+  "주소: 인천광역시 중구 신흥동3가 37",
+  "전화번호: 010-3214-4139",
+  "이메일: wonlogis1@gmail.com"
 ];
 
 export const socialLinks = [
