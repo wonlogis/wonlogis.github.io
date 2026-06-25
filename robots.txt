@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wonlogis.github.io/sitemap.xml
+Sitemap: https://wonlogics.co.kr/sitemap.xml

@@ -123,10 +123,10 @@ CNAME
 현재 값:
 
 ```txt
-www.test.com
+wonlogics.co.kr
 ```
 
-실제 도메인 연결 시 이 파일 내용만 원하는 도메인으로 변경하면 됩니다.
+현재 프로젝트는 `wonlogics.co.kr` 기준으로 설정되어 있습니다.
 
 예시:
 
