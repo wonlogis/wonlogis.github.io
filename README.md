@@ -150,6 +150,17 @@ www.your-domain.com
 - 연락처 정보
 - 푸터 링크 텍스트
 
+GitHub 웹에서 직접 수정해도 반영되게 하려면 아래 파일을 수정하면 됩니다.
+
+- [site-src/src/content/siteContent.tsx](/Users/macpro/Desktop/jk/GitHub/wonlogis.github.io/site-src/src/content/siteContent.tsx)
+
+이 저장소에는 [deploy-pages.yml](/Users/macpro/Desktop/jk/GitHub/wonlogis.github.io/.github/workflows/deploy-pages.yml) 워크플로가 포함되어 있어, `main` 또는 `master` 브랜치에 커밋되면 자동으로 빌드 후 GitHub Pages에 배포됩니다.
+
+주의:
+
+- GitHub 저장소 설정의 `Pages` 항목에서 배포 소스를 `GitHub Actions`로 설정해야 합니다.
+- 루트의 `index.html`, `404.html`, `assets`는 빌드 산출물이므로 직접 수정하지 말고 소스 파일을 수정하는 것을 권장합니다.
+
 ## 이미지 교체 방법
 
 현재 화면에 사용되는 이미지는 아래 폴더에 정리되어 있습니다.
