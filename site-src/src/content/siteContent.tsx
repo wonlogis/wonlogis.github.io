@@ -62,9 +62,9 @@ type PartnerLogo = {
 };
 
 export const brandContent = {
-  name: '원로지',
-  logoAlt: '원로지 로고',
-  homeAriaLabel: '원로지 홈으로 이동',
+  name: '원로지스',
+  logoAlt: '원로지스 로고',
+  homeAriaLabel: '원로지스 홈으로 이동',
 };
 
 export const siteMeta = {
@@ -109,15 +109,15 @@ export const commonLabels = {
 };
 
 export const heroSectionContent = {
-  srTitle: '원로지',
+  srTitle: '원로지스',
   title: '신뢰로 연결하고, 가치로 운송합니다',
-  description: '원로지는 고객의 소중한 화물을 신속하고 안전하게 연결하는 종합 물류 파트너입니다.',
-  imageAlt: '원로지 트럭이 글로벌 네트워크 배경 앞을 달리는 모습',
+  description: '원로지스는 고객의 소중한 화물을 신속하고 안전하게 연결하는 종합 물류 파트너입니다.',
+  imageAlt: '원로지스 트럭이 글로벌 네트워크 배경 앞을 달리는 모습',
 };
 
 export const servicesSectionContent = {
   eyebrow: 'Our Services',
-  title: '원로지의 서비스',
+  title: '원로지스의 서비스',
   description: '다양한 운송 솔루션으로 고객의 비즈니스를 성공으로 이끕니다.',
 };
 
@@ -125,8 +125,8 @@ export const aboutSectionContent = {
   eyebrow: 'About Won Logis',
   title: '신뢰받는 종합 물류 파트너, 원로지',
   description:
-    '원로지는 풍부한 경험과 전문성을 바탕으로 고객의 비즈니스 성장에 함께하는 최고의 물류 파트너가 되겠습니다.',
-  imageAlt: '원로지 사옥 간판',
+    '원로지스는 풍부한 경험과 전문성을 바탕으로 고객의 비즈니스 성장에 함께하는 최고의 물류 파트너가 되겠습니다.',
+  imageAlt: '원로지스 사옥 간판',
 };
 
 export const partnersSectionContent = {
@@ -167,7 +167,7 @@ export const serviceCards: ServiceCard[] = [
     image: serviceSeaImage,
     icon: serviceSeaIcon,
     detailDescription:
-      '원로지는 수출입 일정, 항차 선택, 선적 서류 대응까지 해상 운송 전 과정을 안정적으로 관리해 장거리 국제 물류의 예측 가능성을 높입니다.',
+      '원로지스는 수출입 일정, 항차 선택, 선적 서류 대응까지 해상 운송 전 과정을 안정적으로 관리해 장거리 국제 물류의 예측 가능성을 높입니다.',
     detailHighlights: [
       'FCL / LCL 조건에 맞춘 유연한 선적 구성',
       '스케줄과 비용을 함께 고려한 항로 제안',
@@ -211,7 +211,7 @@ export const serviceCards: ServiceCard[] = [
     image: serviceLandImage,
     icon: serviceLandIcon,
     detailDescription:
-      '원로지의 육상 운송은 상차부터 하차까지 차량 배차, 운행 스케줄, 현장 커뮤니케이션을 세밀하게 관리해 안정적인 국내 물류 흐름을 지원합니다.',
+      '원로지스의 육상 운송은 상차부터 하차까지 차량 배차, 운행 스케줄, 현장 커뮤니케이션을 세밀하게 관리해 안정적인 국내 물류 흐름을 지원합니다.',
     detailHighlights: [
       '전국 단위 배차 네트워크 기반의 신속한 차량 수배',
       '화물 특성에 맞는 차량 조건과 운송 루트 제안',
